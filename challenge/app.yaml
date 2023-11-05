@@ -1,0 +1,2 @@
+runtime: Python 3.12.0
+entrypoint: gunicorn -b :$PORT app = fastapi.FastAPI()

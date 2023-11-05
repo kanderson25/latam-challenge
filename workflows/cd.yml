@@ -1,0 +1,23 @@
+name: CD
+
+on:
+  workflow_run:
+    workflows: ["CI"]
+    types:
+      - completed
+
+jobs:
+  deploy:
+    runs-on: windows-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+
+    - name: Deploy to GCP
+      run: |
+        # Configura las credenciales de GCP
+        gcloud auth activate-service-account --key-file=key.json
+
+        # Despliega la aplicación en GCP
+        gcloud app deploy --quiet
