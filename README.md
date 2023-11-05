@@ -55,10 +55,10 @@ In addition, the DS considered relevant the creation of the following columns:
     This is an example of the `body` you must send:
     ```json
     {
-      "name": "Juan Perez",
-      "mail": "juan.perez@example.com",
+      "name": "Kevin Anderson",
+      "mail": "kevin.chuga@outlook.com",
       "github_url": "https://github.com/juanperez/latam-challenge.git",
-      "api_url": "https://juan-perez.api"
+      "api_url": "https://tu-api-url"
     }
     ```
     ##### ***PLEASE, SEND THE REQUEST ONCE.***
